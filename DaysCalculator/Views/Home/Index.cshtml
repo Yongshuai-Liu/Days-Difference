@@ -2,30 +2,61 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<h1>Days Difference Calculator</h1>
+<p class="lead">Select From Date and To Date to calculate the days difference between them.</p>
+@Html.Partial("_CalculateDaysDiff")
+
+
+@*<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Quick rundown:</h3>
+    </div>
+    <div class="panel-body">
+        <p>The purpose of this search demo application is to showcase Lucene Search and other technologies I used along the way.</p>
+        <p>To start, you will need to create your local copy of the Demo database for the application to search, and here is the steps how:</p>
+        <ol>
+            <li>Please find the database project <b>[SearchDemo.Database.Demo]</b> under <b>[Databases]</b> folder in Solution Explorer</li>
+            <li>Please use this database project to create your local database, and name it <b>Demo</b>, now you should have a local database called <b>Demo</b> with 1 table called <b>Files</b></li>
+            <li>Please use the <b>seed_data.sql</b> in <b>[SeedData]</b> folder to populate the <b>File</b> table, it contains around 2000+ rows of sample file data</li>
+            <li>Now you are good to search!</li>
+        </ol>
+
+        <p><i>Thanks for your time! -Lucas </i><i class="fa fa-smile-o" aria-hidden="true"></i></p>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Some features:</h3>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="panel-body">
+        <p>The site is build using N-Tier architecture design, we have <b>SearchDemo.Site</b> on top of <b>SearchDemo.BLL</b> on top of <b>SearchDemo.Repositories</b> on top of the T-SQL database. This structure will make it easy to scale and modify.</p>
+        <p>When you search, as you type, you will notice a autocomplete dropdown to suggest you some potential search words, it is using JQuery Ajax call to get result set from backend, I used NHunspell nuget package to support this feature</p>
+        <p>The search support partial word search, means if you search 'tes', tes* results will show up as well</p>
     </div>
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Some technologies used:</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>Lucene Search</li>
+            <li>MVC</li>
+            <li>Entityframework</li>
+            <li>Dependency Injection</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+            <li>AutoComplete</li>
+            <li>DataTables</li>
+            <li>Fontawesome</li>
+            <li>Ajax</li>
+            <li>Linq</li>
+            <li>NHunspell</li>
+            <li>Castle Windsor</li>
+            <li>TSQL</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+</div>*@
